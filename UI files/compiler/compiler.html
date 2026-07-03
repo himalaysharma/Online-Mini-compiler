@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler | CodeCompiler</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="compiler.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav>
+
+            <div class="left-nav">
+
+                <a href="index.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Home
+                </a>
+
+                <h1>
+                    Code<span>Compiler</span>
+                </h1>
+
+            </div>
+
+            <div class="right-nav">
+
+                <div class="language-select">
+
+                    <i class="devicon-cplusplus-plain colored"></i>
+
+                    <select>
+
+                        <option>C</option>
+                        <option selected>C++</option>
+                        <option>Java</option>
+                        <option>Python</option>
+
+                    </select>
+
+                </div>
+
+                <button class="theme-btn">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <button class="run-btn">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Run Code
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= EDITOR ================= -->
+
+        <section class="editor">
+
+            <div class="editor-top">
+
+                <div class="file-tab">
+
+                    <i class="fa-regular fa-file-code"></i>
+
+                    <span>main.cpp</span>
+
+                </div>
+
+            </div>
+
+           <div class="editor-area">
+
+    <div
+        id="code-editor"
+        contenteditable="true"
+        spellcheck="false">
+// Start writing your code here...
+
+    </div>
+
+</div>
+
+        </section>
+
+
+
+        <!-- ================= TERMINAL ================= -->
+
+        <section class="terminal">
+
+            <div class="terminal-top">
+
+                <h3>Terminal</h3>
+
+                <div class="terminal-actions">
+
+                    <button>
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                        Clear
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        Copy
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="terminal-body">
+
+<pre>
+> Program started...
+
+Hello, World!
+
+Enter a number:
+
+█
+</pre>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= STATUS BAR ================= -->
+
+    <footer class="status-bar">
+
+        <div class="status-left">
+
+            <span>C++</span>
+
+            <span>|</span>
+
+            <span>Ready</span>
+
+            <span class="green-dot"></span>
+
+        </div>
+
+        <div class="status-right">
+
+            <span>Ln 1, Col 1</span>
+
+            <span>|</span>
+
+            <span>Spaces: 4</span>
+
+            <span>|</span>
+
+            <span>UTF-8</span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

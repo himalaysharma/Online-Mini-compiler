@@ -175,6 +175,7 @@ section:first-of-type p{
     background:#2563eb;
     color:#fff;
     border:none;
+    text-decoration: none;
 }
 
 .primary-btn:hover{

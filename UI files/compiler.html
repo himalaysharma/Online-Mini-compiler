@@ -18,7 +18,7 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-    <link rel="stylesheet" href="compiler.css">
+    <link rel="stylesheet" href="css/compiler.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
             <div class="left-nav">
 
-                <a href="index.html" class="back-btn">
+                <a href="Homepage.html" class="back-btn">
                     <i class="fa-solid fa-arrow-left"></i>
                     Home
                 </a>
@@ -46,24 +46,21 @@
 
                 <div class="language-select">
 
-                    <i class="devicon-cplusplus-plain colored"></i>
+    <i id="language-icon" class="devicon-cplusplus-plain colored"></i>
 
-                    <select>
+    <select id="language-select">
 
-                        <option>C</option>
-                        <option selected>C++</option>
-                        <option>Java</option>
-                        <option>Python</option>
+        <option value="c" selected>C</option>
 
-                    </select>
+        <option value="cpp">C++</option>
 
-                </div>
+        <option value="java">Java</option>
 
-                <button class="theme-btn">
+        <option value="python">Python</option>
 
-                    <i class="fa-solid fa-moon"></i>
+    </select>
 
-                </button>
+</div>
 
                 <button class="run-btn">
 
@@ -95,22 +92,14 @@
 
                     <i class="fa-regular fa-file-code"></i>
 
-                    <span>main.cpp</span>
+                    <span id="file-name">main.cpp</span>
 
                 </div>
 
             </div>
 
            <div class="editor-area">
-
-    <div
-        id="code-editor"
-        contenteditable="true"
-        spellcheck="false"> 
-// Start writing your code here...
-
-    </div>
-
+            <div id ="monaco-editor"></div>
 </div>
 
         </section>
@@ -127,39 +116,22 @@
 
                 <div class="terminal-actions">
 
-                    <button>
+                   <button id="clear-terminal">
 
-                        <i class="fa-regular fa-trash-can"></i>
+    <i class="fa-regular fa-trash-can"></i>
 
-                        Clear
+    Clear
 
-                    </button>
-
-                    <button>
-
-                        <i class="fa-regular fa-copy"></i>
-
-                        Copy
-
-                    </button>
+</button>
 
                 </div>
 
             </div>
 
-            <div class="terminal-body">
+          <div class="terminal-body">
 
-<pre>
-> Program started...
-
-Hello, World!
-
-Enter a number:
-
-█
-</pre>
-
-            </div>
+              <pre id="terminal-output"></pre>
+          </div>
 
         </section>
 
@@ -173,7 +145,7 @@ Enter a number:
 
         <div class="status-left">
 
-            <span>C++</span>
+            <span id = "language-status">C</span>
 
             <span>|</span>
 
@@ -185,7 +157,7 @@ Enter a number:
 
         <div class="status-right">
 
-            <span>Ln 1, Col 1</span>
+            <span id="cursor-position">Ln 1, Col 1</span>
 
             <span>|</span>
 
@@ -198,6 +170,8 @@ Enter a number:
         </div>
 
     </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.min.js"></script>
+<script src="js/compiler.js"></script>
 
 </body>
 </html>
